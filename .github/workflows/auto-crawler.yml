@@ -5,7 +5,7 @@ name: Auto Crawler
 
 on:
   schedule:
-    - cron: '5 * * * *'
+    - cron: '1 * * * *'
       timezone: 'UTC'
 jobs:
   build:
