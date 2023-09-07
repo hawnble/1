@@ -302,7 +302,7 @@ class DanawaCrawler:
             
             #데이터 리스트가 비어 있는 경우 헤더 행을 추가합니다.
             if len(dataList) == 0:
-                dataList.append(['Id', 'Name'])
+                dataList.append(['Id', 'Name','SpecList','Price'])
             
             #크롤링 데이터의 헤더 값을 데이터 리스트의 헤더 행에 추가하고 데이터 크기를 설정합니다.    
             dataList[0].append(crawl_dataList[0][0])
