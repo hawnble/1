@@ -415,5 +415,4 @@ if __name__ == '__main__':
     crawler = DanawaCrawler()
     crawler.DataRefresh()
     crawler.StartCrawling()
-    crawler.DataSort()
     crawler.CreateIssue()
