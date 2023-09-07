@@ -318,7 +318,7 @@ class DanawaCrawler:
                 for data in dataList:
                     if data[0] == product[0]:
                         if len(data) < dataSize:
-                            data.append(product[2])
+                            data.append(product[2],product[3])
                         isDataExist = True
                         break
 
@@ -327,7 +327,7 @@ class DanawaCrawler:
                     newDataList = ([product[0], product[1]])
                     for i in range(2,len(dataList[0])-1):
                         newDataList.append(0)
-                    newDataList.append(product[2])
+                    newDataList.append(product[2],product[3])
                 
                     #새로운 데이터 리스트를 기존 데이터 리스트에 추가합니다.
                     dataList.append(newDataList)
