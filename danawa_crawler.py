@@ -168,7 +168,7 @@ class DanawaCrawler:
                             else:
                                 productPriceStr += f'{price}'
                     
-                    crawlingData_csvWriter.writerow([productId, productName, productPriceStr])
+                    crawlingData_csvWriter.writerow([productId, productName, productSpec_list, productPriceStr])
 
         except Exception as e:
             print('Error - ' + crawlingName + ' ->')
