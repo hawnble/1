@@ -25,7 +25,7 @@ from github import Github
 PROCESS_COUNT = 2
 
 GITHUB_TOKEN_KEY = 'MY_GITHUB_TOKEN'
-GITHUB_REPOSITORY_NAME = 'sammy310/Danawa-Crawler'
+GITHUB_REPOSITORY_NAME = 'hawnble/1'
 
 CRAWLING_DATA_CSV_FILE = 'CrawlingCategory.csv'
 DATA_PATH = 'crawl_data'
