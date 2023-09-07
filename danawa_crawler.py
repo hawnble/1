@@ -70,7 +70,8 @@ class DanawaCrawler:
             for crawlingValues in csv.reader(file, skipinitialspace=True):
                 #CSV 파일의 각 줄이 주석으로 시작하지 않는 경우에만 아래 코드를 실행합니다.
                 if not crawlingValues[0].startswith(DATA_REMARK):
-                    #CSV 파일에서 읽어온 값을 파싱하여 카테고리 정보를 딕셔너리로 만들고, self.crawlingCategory 리스트에 추가합니다. 이 딕셔너리는 카테고리의 이름, URL 및 크롤링 페이지 크기를 포함합니다
+                    #CSV 파일에서 읽어온 값을 파싱하여 카테고리 정보를 딕셔너리로 만들고, self.crawlingCategory 리스트에 추가합니다. 
+                    #이 딕셔너리는 카테고리의 이름, URL 및 크롤링 페이지 크기를 포함합니다
                     self.crawlingCategory.append({STR_NAME: crawlingValues[0], STR_URL: crawlingValues[1], STR_CRAWLING_PAGE_SIZE: int(crawlingValues[2])})
 
     def StartCrawling(self):
