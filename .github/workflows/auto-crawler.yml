@@ -4,6 +4,9 @@
 name: Auto Crawler
 
 on:
+  schedule:
+    - cron: '0 0 * * *'
+
   # 원래 여기에 push 이벤트가 들어갔어야 하는데 `workflow_dispatch`라는 키워드가 들어갔죠?
   # 즉, "workflow를 수동으로 trigger시킬게"라는 의미입니다.
   workflow_dispatch:
