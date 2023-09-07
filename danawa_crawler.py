@@ -121,6 +121,7 @@ class DanawaCrawler:
 
                     productId = product.get_attribute('id')[11:]
                     productName = product.find_element_by_xpath('./div/div[2]/p/a').text.strip()
+                    productSpec_list = product.find_element_by_xpath('.div/div[2]/dl/dd/div').text.strip()
                     productPrices = product.find_elements_by_xpath('./div/div[3]/ul/li')
                     productPriceStr = ''
 
