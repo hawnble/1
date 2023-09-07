@@ -8,13 +8,6 @@ on:
   # 즉, "workflow를 수동으로 trigger시킬게"라는 의미입니다.
   workflow_dispatch:
     # 값도 받을 수 있습니다. region, env 말고 원하시는 값들을 받을 수도 있겠죠?
-    inputs:
-      region:
-        required: true
-        type: string
-      env:
-        required: true
-        type: string
 
 jobs:
   build:
