@@ -61,7 +61,7 @@ STR_CRAWLING_PAGE_SIZE = 'crawlingPageSize'
 class DanawaCrawler:
     def __init__(self):
         #오류 목록을 저장하는 빈 리스트를 초기화합니다.
-        self.errorList = list
+        self.errorList = list()
         #크롤링할 카테고리 정보를 저장하는 빈 리스트를 초기화합니다.
         self.crawlingCategory = list()
         #CRAWLING_DATA_CSV_FILE에 지정된 CSV 파일을 읽기 모드로 엽니다.
