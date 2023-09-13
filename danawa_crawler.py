@@ -172,7 +172,7 @@ class DanawaCrawler:
                     수정하고 있는 부분 (Spec_list, Reg_month 추가)
                     '''
                     productSpec_list = product.find_element_by_xpath('./div/div[2]/dl/dd/div').text.strip()
-                    Reg_month = product.find_element_by_xpath('.div/div[2]/div[2]/div/dl[1]')text.strip()
+                    Reg_month = product.find_element_by_xpath('.div/div[2]/div[2]/div/dl[1]').text.strip()
 
                     productPrices = product.find_elements_by_xpath('./div/div[3]/ul/li')
                     productPriceStr = ''
