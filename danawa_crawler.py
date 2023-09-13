@@ -231,7 +231,7 @@ class DanawaCrawler:
                                 productPriceStr += f'{price}'
 
                     #크롤링한 상품 정보를 CSV 파일에 기록합니다.
-                    crawlingData_csvWriter.writerow([productId, productName, productSpec_list, productPriceStr])
+                    crawlingData_csvWriter.writerow([productId, productName, productSpec_list, productPriceStr, Reg_month])
 
         #예외 처리 블록을 시작합니다.
         #예외가 발생한 경우 오류 메시지를 출력하고 self.errorList에 오류를 추가합니다.
@@ -322,6 +322,7 @@ class DanawaCrawler:
                         if len(data) < dataSize:
                             data.append(product[2])
                             data.append(product[3])
+                            data.append(product[4])
                         isDataExist = True
                         break
 
@@ -332,6 +333,7 @@ class DanawaCrawler:
                         newDataList.append(0)
                     newDataList.append(product[2])
                     newDataList.append(product[3])
+                    newDataList.append(product[4])
                 
                     #새로운 데이터 리스트를 기존 데이터 리스트에 추가합니다.
                     dataList.append(newDataList)
