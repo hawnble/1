@@ -123,6 +123,13 @@ class DanawaCrawler:
 
             #웹 페이지에서 옵션 요소를 찾아 클릭합니다.
             browser.find_element_by_xpath('//option[@value="90"]').click()
+
+            '''
+            #수정중
+            # 웹 페이지에서 '/html/body/div[3]/div[3]/div[5]/div[2]/div[2]/form/div[2]/div[2]/div[1]/div[2]/div/div/dl[2]/dd/div/button[1]' 요소를 찾아 클릭합니다.
+            button_element = browser.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[5]/div[2]/div[2]/form/div[2]/div[2]/div[1]/div[2]/div/div/dl[2]/dd/div/button[1]')
+            button_element.click()
+            '''
         
             #웹 페이지에서 특정 요소가 사라질 때까지 최대 10초 동안 대기합니다.
             wait = WebDriverWait(browser, 10)
